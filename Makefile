@@ -36,12 +36,12 @@ bin/mainArrays.o: src/mainArrays.c
 	${CC} ${CFLAGS} -c -o bin/mainArrays.o src/mainArrays.c
 
 clean:
-	rm -rf bin/*.o ${TARGETS}
+	rm -rf bin/*.o ${TARGETS} vgcore*
 	
-valgrindList:
+valgrindList: bin/mainList
 	valgrind ${VALGRIND_FLAGS} bin/mainList
 
-valgrindArrays:
+valgrindArrays: bin/mainArrays
 	valgrind ${VALGRIND_FLAGS}   bin/mainArrays
 
 #printMain:
