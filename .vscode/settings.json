@@ -1,2 +1,8 @@
 {
-}
+    "files.associations": {
+      "stdlib.h": "c"
+    },
+    "editor.tabSize": 2,
+    "files.autoSave": "afterDelay",
+    "editor.insertSpaces": false
+  }

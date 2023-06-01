@@ -5,43 +5,21 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "(gdb) mainArrays", // Change name
-      "type": "cppdbg",
+      "name": "(lldb) mainArrays", // Change name
+      "type": "lldb",
       "request": "launch",
       "program": "${workspaceFolder}/bin/mainArrays", // THIS IS IMPORTANT
       "args": [], // add comma separated list of args here.
-      "stopAtEntry":  true, // THIS IS IMPORTANT 
       "cwd": "${workspaceFolder}",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "gdb",
-      "setupCommands": [
-          {
-              "description": "Enable pretty-printing for gdb",
-              "text": "-enable-pretty-printing",
-              "ignoreFailures": true
-          }
-      ],
       "preLaunchTask": "runMake", // THIS IS IMPORTANT
     },
     {
-      "name": "(gdb) mainList",
-      "type": "cppdbg",
+      "name": "(lldb) mainList",
+      "type": "lldb",
       "request": "launch",
       "program": "${workspaceFolder}/bin/mainList", // THIS IS IMPORTANT
       "args": [],
-      "stopAtEntry": true, // THIS IS IMPORTANT 
       "cwd": "${workspaceFolder}",  
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ],
       "preLaunchTask": "runMake", // THIS IS IMPORTANT
     }
   ]
